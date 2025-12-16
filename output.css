@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-700: oklch(50.5% 0.213 27.518);
+    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-sky-500: oklch(68.5% 0.169 237.323);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
@@ -179,6 +180,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -200,9 +204,6 @@
   .min-h-50 {
     min-height: calc(var(--spacing) * 50);
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
@@ -214,9 +215,6 @@
   }
   .flex-col {
     flex-direction: column;
-  }
-  .rounded {
-    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -289,6 +287,9 @@
   .text-blue-500 {
     color: var(--color-blue-500);
   }
+  .text-green-600 {
+    color: var(--color-green-600);
+  }
   .text-red-700 {
     color: var(--color-red-700);
   }
@@ -305,13 +306,6 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .hover\:bg-blue-400 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-blue-400);
-      }
-    }
   }
   .hover\:bg-blue-500 {
     &:hover {
